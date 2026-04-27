@@ -42,6 +42,7 @@ function startGame() {
 
     nextWord();
     incrementTimer();
+    displayPoints();
 }
 
 function nextWord() {
@@ -73,7 +74,7 @@ function correct() {
 function incrementTimer() {
     time = startTime - Math.floor((new Date() - startDate)/1000);
     timer.textContent = time;
-    if (time == 0) {
+    if (time <= 0) {
         options.hidden = false;
         gameUi.hidden = true;
         lastGame.textContent = "zadnji game: " + points.toString() + " bodova"

@@ -20,15 +20,15 @@
                     <option>1 bod</option>
                 </select>
             </div>
-            <button onclick="window.startGame()">pokreni</button>
+            <button id="start-button">pokreni</button>
             <h2 id="last-game">zadnji game: N/A</h2>
         </div>
         <div id="game-ui" hidden>
             <h1 id="word"></h1>
             <h2 id="timer"></h2>
             <h2 id="points-display">bodovi:0</h2>
-            <button onclick="correct()">točno</button>
-            <button onclick="wrong()">netočno</button>
+            <button id="correct-button">točno</button>
+            <button id="wrong-button">netočno</button>
         </div>
     </body>
     <script src="/index.js" type="module"></script>

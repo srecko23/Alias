@@ -38,6 +38,7 @@ function startGame() {
     startTime = parseInt(timeInput.value);
     time = startTime;
     startDate = new Date();
+    points = 0;
 
     nextWord();
     incrementTimer();

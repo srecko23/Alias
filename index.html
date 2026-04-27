@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="options">
+            <div id="frequency">
+                <h2>frekvencija</h2>
+                <input type="number" id="difficulty-min" value = 1140>
+                -
+                <input type="number" id="difficulty-max" value = 5663487>
+            </div>
+            <div>
+                <h2>vrijeme (s)</h2>
+                <input type="number" id="time" value = 60>
+            </div>
+            <div>
+                <h2>kazna za skip</h2>
+                <select id="penalty-dropdown">
+                    <option>0 bodova</option>
+                    <option>0.5 bodova</option>
+                    <option>1 bod</option>
+                </select>
+            </div>
+            <button onclick="startGame()">pokreni</button>
+            <h2 id="last-game">zadnji game: N/A</h2>
+        </div>
+        <div id="game-ui" hidden>
+            <h1 id="word"></h1>
+            <h2 id="timer"></h2>
+            <h2 id="points-display">bodovi:0</h2>
+            <button onclick="correct()">točno</button>
+            <button onclick="wrong()">netočno</button>
+        </div>
+    </body>
+    <script src="/index.js" type="module"></script>
+</html>
